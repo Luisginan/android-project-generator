@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Location of template project -->
+  <TemplatePath>C:\Users\bintang\Desktop\Android Apps Generator\Template Project\</TemplatePath>
+ 
+  <!-- Location for output project -->
+  <OutputPath>C:\Users\bintang\Desktop\Output\</OutputPath>
+  
+  <TemplateList>
+
+<!-- ====================================================================================== -->
+<!-- start rename folders --> 
+<!-- ====================================================================================== -->
+
+<!-- ====================================================================================== -->
+<!-- For renaming folder -->
+<!-- you must add OutputPath + file location -->
+<!-- ====================================================================================== -->
+
+  <FileTemplate>
+	<Type>1</Type>
+    <Filepath>C:\Users\bintang\Desktop\Output\@project_namespace@</Filepath>
+    <Keyword>@project_namespace@</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate>  
+  
+  <FileTemplate>
+	<Type>1</Type>
+    <Filepath>C:\Users\bintang\Desktop\Output\point-lead\src\main\java\com\algolab\@project_namespace@</Filepath>
+    <Keyword>@project_namespace@</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate>   
+<!-- ====================================================================================== -->
+<!-- finish rename folders --> 
+<!-- ====================================================================================== -->
+
+<!-- ====================================================================================== -->
+<!-- start rename files --> 
+<!-- ====================================================================================== -->
+
+<!-- rename file in login--> 
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\src\main\java\com\algolab\point-lead\login\LoginActivity.java</Filepath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate> 
+  
+  <!-- rename file in home--> 
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\src\main\java\com\algolab\point-lead\home\HomeActivity.java</Filepath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate> 
+  
+  <!-- rename file in base-->
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\src\main\java\com\algolab\point-lead\base\DebugRestConfig.java</Filepath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate>  
+  
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\src\main\java\com\algolab\point-lead\base\NgemartReleaseRestConfig.java</Filepath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate>  
+  
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\src\main\java\com\algolab\point-lead\base\NgeretailReleaseRestConfig.java</Filepath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate> 
+  
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\src\main\java\com\algolab\point-lead\base\PointLeadActivity.java</Filepath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate> 
+  
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\src\main\java\com\algolab\point-lead\base\PointLeadApplicationContext.java</Filepath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate>
+  
+  <!-- rename file in component-->
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\src\main\java\com\algolab\point-lead\component\SideMenuModule.java</Filepath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>point-lead</Value>
+  </FileTemplate>  
+
+  <!-- build gradle-->
+  <FileTemplate>
+	<Type>0</Type>
+    <Filepath>point-lead\build.gradle</Filepath>
+    <Keyword>$$app_name$$</Keyword>
+    <Value>point_lead</Value>
+  </FileTemplate>
+
+  <FileTemplate>
+  <Type>0</Type>
+      <Filepath>\point-lead\build.gradle</Filepath>
+      <Keyword>$$project_id$$</Keyword>
+      <Value>com.gin.ngirim</Value>
+  </FileTemplate>  
+
+  <!-- strings -->
+    <FileTemplate>
+	<Type>0</Type>
+		<Filepath>point-lead\src\main\res\values\strings.xml</Filepath>
+		<Keyword>$$app_name$$</Keyword>
+		<Value>Point Leads</Value>
+    </FileTemplate>
+	
+    <FileTemplate>
+	
+	<Type>0</Type>
+		<Filepath>point-lead\src\main\res\values\strings.xml</Filepath>
+		<Keyword>$$fcm_sender_id$$</Keyword>
+		<Value>1035174301942</Value>
+    </FileTemplate>
+	
+    <FileTemplate>
+	<Type>0</Type>
+      <Filepath>point-lead\src\main\res\values\strings.xml</Filepath>
+      <Keyword>$$server_client_id$$</Keyword>
+      <Value>1035174301942-2kj4fv6p8la684m9hpn9uhif8jlfojih.apps.googleusercontent.com</Value>
+    </FileTemplate>
+
+    <!-- colors -->
+    <FileTemplate>
+	<Type>0</Type>
+      <Filepath>point-lead\src\main\res\values\colors.xml</Filepath>
+      <Keyword>$$colorPrimary$$</Keyword>
+      <Value>#0090ea</Value>
+    </FileTemplate>
+	
+    <FileTemplate>
+	<Type>0</Type>
+      <Filepath>point-lead\src\main\res\values\colors.xml</Filepath>
+      <Keyword>$$colorPrimaryDark$$</Keyword>
+      <Value>#0063b7</Value>
+    </FileTemplate>
+	
+    <FileTemplate>
+	<Type>0</Type>
+      <Filepath>point-lead\src\main\res\values\colors.xml</Filepath>
+      <Keyword>$$colorAccent$$</Keyword>
+      <Value>#ffc400</Value>
+    </FileTemplate>
+
+    <!--google json -->
+    <FileTemplate>
+	<Type>0</Type>
+      <Filepath>point-lead\google-services.json</Filepath>
+      <Keyword>$$google_play_service$$</Keyword>
+      <Value>{
+  "project_info": {
+    "project_number": "1035174301942",
+    "firebase_url": "https://ngirim-26f08.firebaseio.com",
+    "project_id": "ngirim-26f08",
+    "storage_bucket": "ngirim-26f08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035174301942:android:0257c619ef2db025",
+        "android_client_info": {
+          "package_name": "com.gin.ngirim.delman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035174301942-ab108ihgl5r4qka7aije5n1tku9edq03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.ngirim.delman",
+            "certificate_hash": "f28bf71b8cc008e39a4bfae827025be979553492"
+          }
+        },
+        {
+          "client_id": "1035174301942-b6m4ks68mnju23q597bgvc6o4ef12enh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.ngirim.delman",
+            "certificate_hash": "6b7d292cba0709888850317f7f986c8972600b72"
+          }
+        },
+        {
+          "client_id": "1035174301942-2kj4fv6p8la684m9hpn9uhif8jlfojih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDID8qHV0Eteo3-1FGLjYzT8cmssOLEaOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035174301942-2kj4fv6p8la684m9hpn9uhif8jlfojih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035174301942:android:f21433714f720044",
+        "android_client_info": {
+          "package_name": "com.gin.ngirim.point"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035174301942-4no42gic0ucbmar7cbrenkfiubac6bto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.ngirim.point",
+            "certificate_hash": "5aee49582297a2c5f45c108d79db3d3132ff1ecc"
+          }
+        },
+        {
+          "client_id": "1035174301942-d7qahidtla0ojas6upa6cnd4ifsmb8g9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.ngirim.point",
+            "certificate_hash": "6b7d292cba0709888850317f7f986c8972600b72"
+          }
+        },
+        {
+          "client_id": "1035174301942-2kj4fv6p8la684m9hpn9uhif8jlfojih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDID8qHV0Eteo3-1FGLjYzT8cmssOLEaOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035174301942-2kj4fv6p8la684m9hpn9uhif8jlfojih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035174301942:android:1845e7800fed56f7",
+        "android_client_info": {
+          "package_name": "com.gin.ngirim.pointlead"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035174301942-91an20o8hn7226ogu39odbcju9sbvddn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gin.ngirim.pointlead",
+            "certificate_hash": "6b7d292cba0709888850317f7f986c8972600b72"
+          }
+        },
+        {
+          "client_id": "1035174301942-2kj4fv6p8la684m9hpn9uhif8jlfojih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDID8qHV0Eteo3-1FGLjYzT8cmssOLEaOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035174301942-2kj4fv6p8la684m9hpn9uhif8jlfojih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}</Value>
+    </FileTemplate>  	
+<!-- ====================================================================================== -->
+<!-- finish rename folders --> 
+<!-- ====================================================================================== -->
+  </TemplateList>
+</Config>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TemplatePath>D:\Automation\Template Project</TemplatePath>
+  <OutputPath>D:\Automation\Output\</OutputPath>
+  
+  <ReplaceContentList> 
+  
+  <ReplaceContent>	
+    <SourcePath>@app_folder_name@\src\androidTest\java\com\@org_name@\@project_namespace@\ExampleInstrumentedTest.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent>
+  
+  <ReplaceContent>	
+    <SourcePath>@app_folder_name@\src\test\java\com\@org_name@\@project_namespace@\ExampleUnitTest.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent>  
+  
+  <ReplaceContent>
+    <SourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\component\SideMenuModule.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent> 
+  
+  <ReplaceContent>
+    <SourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\home\HomeActivity.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent> 
+  
+  <ReplaceContent>
+    <SourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\login\LoginActivity.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent> 
+  
+  
+  <ReplaceContent>
+    <SourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\DebugRestConfig.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent>  
+  
+  <ReplaceContent>	
+    <SourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\NgemartReleaseRestConfig.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent>  
+  
+  <ReplaceContent>	
+    <SourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\NgeretailReleaseRestConfig.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent>
+  
+  <ReplaceContent>	
+    <SourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\PointLeadActivity.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent>  
+  
+  <ReplaceContent>	
+    <SourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\PointLeadApplicationContext.java</SourcePath>
+    <Keyword>$$project_namespace$$</Keyword>
+    <Value>pointlead</Value>
+  </ReplaceContent>
+  
+  <ReplaceContent>	
+	<SourcePath>@app_folder_name@\build.gradle</SourcePath>
+    <Keyword>$$app_name$$</Keyword>
+    <Value>point_lead</Value>
+  </ReplaceContent>  
+  
+  <ReplaceContent>
+	<SourcePath>@app_folder_name@\build.gradle</SourcePath>
+    <Keyword>$$project_id$$</Keyword>
+    <Value>com.gin.ngirim</Value>
+  </ReplaceContent>  
+  
+  <ReplaceContent>
+    <SourcePath>@app_folder_name@\src\main\res\values\strings.xml</SourcePath>
+	<Keyword>$$app_name$$</Keyword>
+	<Value>Point Leads</Value>
+  </ReplaceContent>
+  
+  <ReplaceContent>
+    <SourcePath>@app_folder_name@\src\main\res\values\strings.xml</SourcePath>
+	<Keyword>$$fcm_sender_id$$</Keyword>
+	<Value>1035174301942</Value>
+  </ReplaceContent>
+  
+  <ReplaceContent>
+	<SourcePath>@app_folder_name@\src\main\res\values\strings.xml</SourcePath>
+    <Keyword>$$server_client_id$$</Keyword>
+    <Value>1035174301942-2kj4fv6p8la684m9hpn9uhif8jlfojih.apps.googleusercontent.com</Value>
+  </ReplaceContent>
+  
+  <ReplaceContent>
+	<SourcePath>@app_folder_name@\src\main\res\values\colors.xml</SourcePath>
+    <Keyword>$$colorPrimary$$</Keyword>
+    <Value>#0090ea</Value>
+  </ReplaceContent>
+  
+  <ReplaceContent>
+	<SourcePath>@app_folder_name@\src\main\res\values\colors.xml</SourcePath>
+    <Keyword>$$colorPrimaryDark$$</Keyword>
+    <Value>#0063b7</Value>
+  </ReplaceContent>
+  
+  <ReplaceContent>
+	<SourcePath>@app_folder_name@\src\main\res\values\colors.xml</SourcePath>
+    <Keyword>$$colorAccent$$</Keyword>
+    <Value>#ffc400</Value>
+  </ReplaceContent>
+  
+  </ReplaceContentList>
+  
+  <RenameFileList>
+	<RenameFile>
+		<OldSourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\PointLeadActivity.java</OldSourcePath>
+		<SourcePathToReplace>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\PointBatmanActivity.java</SourcePathToReplace>
+	</RenameFile>
+	<RenameFile>
+		<OldSourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\NgemartReleaseRestConfig.java</OldSourcePath>
+		<SourcePathToReplace>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\NgirimReleaseRestConfig.java</SourcePathToReplace>
+	</RenameFile>
+	<RenameFile>
+		<OldSourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\NgeretailReleaseRestConfig.java</OldSourcePath>
+		<SourcePathToReplace>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\Ngirim2ReleaseRestConfig.java</SourcePathToReplace>
+	</RenameFile>
+	<RenameFile>
+		<OldSourcePath>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\PointLeadApplicationContext.java</OldSourcePath>
+		<SourcePathToReplace>@app_folder_name@\src\main\java\com\@org_name@\@project_namespace@\base\PointBatmanApplicationContext.java</SourcePathToReplace>
+	</RenameFile>	
+  </RenameFileList>  
+  
+  <RenameFolderList>
+  
+	  <RenameFolder>
+		<SourcePath>@app_folder_name@\src\androidTest\java\com\@org_name@\@project_namespace@</SourcePath>
+		<Keyword>@project_namespace@</Keyword>
+		<Value>pointlead</Value>
+	  </RenameFolder>
+	  	  
+	  <RenameFolder>
+		<SourcePath>@app_folder_name@\src\androidTest\java\com\@org_name@</SourcePath>
+		<Keyword>@org_name@</Keyword>
+		<Value>ginx</Value>
+	  </RenameFolder>
+	
+	  <RenameFolder>
+		<SourcePath>@app_folder_name@</SourcePath>
+		<Keyword>@app_folder_name@</Keyword>
+		<Value>point-lead</Value>
+	  </RenameFolder>
+  </RenameFolderList>
+</Config>
